@@ -49,12 +49,12 @@ export const FilterContextProvider = ({ children }) => {
     return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value } });
   };
 
-  // to clear the filter
+  // to clear  filter
   const clearFilters = () => {
     dispatch({ type: "CLEAR_FILTERS" });
   };
 
-  // to sort the product
+  //  sort the product
   useEffect(() => {
     dispatch({ type: "FILTER_PRODUCTS" });
     dispatch({ type: "SORTING_PRODUCTS" });
